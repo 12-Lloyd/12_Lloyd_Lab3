@@ -5,7 +5,7 @@ using UnityEngine;
 public class BasketMovementScript : MonoBehaviour
 {
     public float speed;
-   
+    int score = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,8 +25,20 @@ public class BasketMovementScript : MonoBehaviour
 
     }
 
-
-
-    
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Healthy"))
+        {
+            score += 10;          
+            Destroy(collision.gameObject);
+           
+        }
+        else if (collision.gameObject.CompareTag("Unhealthy"))
+        {
+         
+            Destroy(collision.gameObject);
+          
+        }
+    }
 
 }
