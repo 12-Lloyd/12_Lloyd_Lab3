@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class BasketMovementScript : MonoBehaviour
 {
     public float speed;
@@ -40,7 +41,7 @@ public class BasketMovementScript : MonoBehaviour
         {
          
             Destroy(collision.gameObject);
-          
+            SceneManager.LoadScene("LoseScene");
         }
     }
 
