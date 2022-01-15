@@ -34,7 +34,7 @@ public class BasketMovementScript2 : MonoBehaviour
         if (time <= 0)
         {
             TimeText.GetComponent<Text>().text = "0";
-            SceneManager.LoadScene("GamePlay_Level2");
+            SceneManager.LoadScene("WinScene");
         }
 
 
