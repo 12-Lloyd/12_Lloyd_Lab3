@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class BasketMovementScript : MonoBehaviour
+public class BasketMovementScript2 : MonoBehaviour
 {
     public float speed;
     int score = 0;

@@ -5,8 +5,8 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject[] spawnee;
-    private float spawntime = 1;
-    private float spawndelay=1;
+    public float spawntime = 1;
+    public float spawndelay = 1;
     private int randomInt;
     float positionx;
    
